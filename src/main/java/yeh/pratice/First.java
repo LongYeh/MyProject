@@ -1,3 +1,5 @@
+package yeh.pratice;
+
 public class First {
     public static void main(String[] args) {
 
