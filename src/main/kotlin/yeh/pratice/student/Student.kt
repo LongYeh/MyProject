@@ -2,28 +2,54 @@ package yeh.pratice.student.kotlin
 
 fun main() {
 
-    val student= Student("nicole",80,80)
-    student.show()
+    val one= Student("nicole",80,80)
+    one.show()
+    val two=Student("james",96,100)
+    two.show()
+    val stu=GraduateStudent("nicole",68,70,69)
+    stu.show()
+
 
 
 }
 
-class Student(var name:String,var english:Int,var math:Int){
+class GraduateStudent(name: String,english: Int,math: Int,thesis:Int) :Student(name,english,math){
+    companion object{
+        var pass=70
+    }
 
-
-    fun show(){
+    override fun show() {
         println("name: $name,english=$english,math=$math")
         print("${passOrFailed()}\taverage=\t${getAverage()}\tgrading=\t${grading()}")
     }
-    private fun getAverage():Int= (english+math)/2
-    private fun grading():Char = when(getAverage()){
+
+    override fun passOrFailed()=if(getAverage()>= pass)"pass" else "feild"
+}
+//open kotlinÄ~©ÓÃöÁä¦r
+open class Student(var name:String,var english:Int,var math:Int){
+
+    companion object{
+        @JvmStatic
+        var pass=60
+        fun test(){
+            print("testing")
+        }
+    }
+
+
+    open fun show(){
+        println("name: $name,english=$english,math=$math")
+        print("${passOrFailed()}\taverage=\t${getAverage()}\tgrading=\t${grading()}")
+    }
+    fun getAverage()= (english+math)/2
+    fun grading():Char = when(getAverage()){
             in 90..99->'A'
             in 80..89->'B'
             in 70..79->'C'
             in 60..69->'D'
             else ->'F'
         }
-    fun passOrFailed()=if(getAverage()>=60)"Pass" else "Failed"
+    open fun passOrFailed()=if(getAverage()>= pass)"Pass" else "Failed"
 
 
 }

@@ -4,7 +4,15 @@ import java.util.Scanner;
 
 public class StudentRunner {
     public static void main(String[] args) {
-       getStudentScore();
+       //getStudentScore();
+        Student one=new Student("103",80,97);
+        Student two=new Student("123",75,30);
+        Student three=new Student("80",45,99);
+        one.print();
+        two.print();
+        three.print();
+
+        System.out.println(yeh.pratice.student.kotlin.Student.getPass());
     }
 
     public static void getStudentScore() {

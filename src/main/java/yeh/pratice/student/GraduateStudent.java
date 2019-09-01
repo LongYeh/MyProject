@@ -1,35 +1,17 @@
 package yeh.pratice.student;
 
-
-
-public class Student {
-    String id;
-    String name;
-    int english,math;
-    double average;
-    static int pass=60;
-
-    public Student(String name, int english, int math) {
-
-        this.name=name;
-        this.english=english;
-        this.math=math;
-
+public class GraduateStudent extends Student{
+    int chinese;
+    static int pass=70;
+    public GraduateStudent(String name,int english,int math,int chinese){
+        super(name,english,math);
+        this.chinese=chinese;
     }
 
-    public int highest(){
-        //int max=(english>math)?english:math;
-        /*if(english>math){
-            max=english;
-        }
-        else
-            max=math;*/
-        return (english>math)?english:math;
-    }
-
-    public  void print(){
+    @Override
+    public void print() {
         System.out.print(name+'\t'+english+'\t'+math
-        +'\t'+getAverage()+"\t"+((average>=pass)?"Pass":"Failed"));
+                +'\t'+chinese+'\t'+getAverage()+"\t"+((average>=pass)?"Pass":"Failed"));
         /*if(getAverage()>=60)
             System.out.println("Pass");
             else
@@ -57,10 +39,5 @@ public class Student {
         }
         System.out.println("  grading :"+grading);
 
-    }
-
-    public double getAverage(){
-        average=(english+math)/2;
-        return average;
     }
 }
