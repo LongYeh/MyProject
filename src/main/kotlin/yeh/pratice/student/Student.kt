@@ -25,7 +25,7 @@ class GraduateStudent(name: String,english: Int,math: Int,thesis:Int) :Student(n
 
     override fun passOrFailed()=if(getAverage()>= pass)"pass" else "feild"
 }
-//open kotlinÄ~©ÓÃöÁä¦r
+//open kotlinï¿½~ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½r
 open class Student(var name:String,var english:Int,var math:Int){
 
     companion object{
@@ -42,7 +42,7 @@ open class Student(var name:String,var english:Int,var math:Int){
         print("${passOrFailed()}\taverage=\t${getAverage()}\tgrading=\t${grading()}")
     }
     fun getAverage()= (english+math)/2
-    fun grading():Char = when(getAverage()){
+    internal fun grading():Char = when(getAverage()){
             in 90..99->'A'
             in 80..89->'B'
             in 70..79->'C'
