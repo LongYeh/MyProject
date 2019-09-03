@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/main/java/yeh/pratice/FinanceReport.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/yeh/pratice/leetcode/TwoSumRun.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yeh/pratice/leetcode/TestRun.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/yeh/pratice/many/Tester.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/yeh/pratice/PersonTest.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

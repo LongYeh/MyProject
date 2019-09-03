@@ -2,7 +2,7 @@ package yeh.pratice.leetcode.kotlin
 
 fun main() {
     val nums= intArrayOf(1,3,5,7)
-    val target=8
+    val target=10
     val twosum= TwoSum()
     val test=twosum.getTwoSum(nums,target)
     var i=0
