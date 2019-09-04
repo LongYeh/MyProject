@@ -16,7 +16,7 @@ public class Tester {
         }
 
         //set();
-        //list();
+        list();
     }
 
     public static void set() {

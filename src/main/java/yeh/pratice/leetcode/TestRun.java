@@ -25,10 +25,19 @@ public class TestRun {
 //       PalindromeNumber pn=new PalindromeNumber();
 
 //        System.out.println(10/100);
-        int integer;
+        /*int integer;
         RomanToInteger test=new RomanToInteger();
-        integer=test.romanToInt("MCMXCIV");
-        System.out.println(integer);
+        integer=test.romanToInt("MM");
+        System.out.println(integer);*/
+        IntegerToRoman RUN=new IntegerToRoman();
+        String roman=RUN.intToRoman(2011);
+
+        System.out.println(roman);
+
+        char[] chars={'i','i'};
+        String str=chars.toString();
+        System.out.println(str);
+
 
 
 
