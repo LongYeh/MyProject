@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class IntegerToRoman {
     public String intToRoman(int num) {
         String roman;
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList();
         if(num>3999&&num<=0)
             return "outOfBounds";
         if(num/1000!=0){
@@ -28,6 +28,7 @@ public class IntegerToRoman {
             if(hun<5){
                 switch (hun){
                     case 1:list.add("C");
+                    break;
                     case 2:{
                         list.add("C");
                         list.add("C");
@@ -48,27 +49,27 @@ public class IntegerToRoman {
             }
             if(hun>=5&&hun<10){
                 switch (hun){
-                    case 1:list.add("D");
+                    case 5:list.add("D");
                     break;
-                    case 2:{
+                    case 6:{
                         list.add("D");
                         list.add("C");
                     }
                     break;
-                    case 3:{
+                    case 7:{
                         list.add("D");
                         list.add("C");
                         list.add("C");
                     }
                     break;
-                    case 4:{
+                    case 8:{
                         list.add("D");
                         list.add("C");
                         list.add("C");
                         list.add("C");
                     }
                     break;
-                    case 5:{
+                    case 9:{
                         list.add("C");
                         list.add("M");
                     }
@@ -138,7 +139,7 @@ public class IntegerToRoman {
                     list.add("I");
                     list.add("V");
                 }
-                    if(one>=5&&one<9){
+                    if(one>=5&&one<10){
                         switch (one){
                             case 5:list.add("V");
                             break;
@@ -169,6 +170,11 @@ public class IntegerToRoman {
                     }
             }
         roman=list.toString();
+            roman=roman.substring(1,roman.length()-1);
+            roman=roman.replaceAll("\\s+","");
+            roman=roman.replaceAll(",","");
+
+
 
 
             return roman;

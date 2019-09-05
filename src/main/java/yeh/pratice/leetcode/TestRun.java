@@ -30,13 +30,14 @@ public class TestRun {
         integer=test.romanToInt("MM");
         System.out.println(integer);*/
         IntegerToRoman RUN=new IntegerToRoman();
-        String roman=RUN.intToRoman(2011);
+        String roman=RUN.intToRoman(9);
 
         System.out.println(roman);
 
-        char[] chars={'i','i'};
+        /*char[] chars={'i','i'};
         String str=chars.toString();
-        System.out.println(str);
+        System.out.println(str);*/
+
 
 
 
