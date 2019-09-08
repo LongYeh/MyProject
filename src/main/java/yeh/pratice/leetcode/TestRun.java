@@ -29,15 +29,27 @@ public class TestRun {
         RomanToInteger test=new RomanToInteger();
         integer=test.romanToInt("MM");
         System.out.println(integer);*/
-        IntegerToRoman RUN=new IntegerToRoman();
-        String roman=RUN.intToRoman(9);
+        /*IntegerToRoman RUN=new IntegerToRoman();
+        String roman=RUN.intToRoman(301);
 
         System.out.println(roman);
+        int i=0301;
+        System.out.println(i);*/
+
 
         /*char[] chars={'i','i'};
         String str=chars.toString();
         System.out.println(str);*/
 
+        String[] test={"","","caaaa"};
+//        System.out.println(test[0].matches("[a-z]*"));
+
+
+
+        LongestCommonPrefix longestCommonPrefix=new LongestCommonPrefix();
+        String answer=longestCommonPrefix.longestCommonPrefix(test);
+        System.out.println(answer);
+//        System.out.println(test[1].substring(0,2));
 
 
 
