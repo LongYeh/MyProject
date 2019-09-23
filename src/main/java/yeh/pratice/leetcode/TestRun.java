@@ -41,14 +41,19 @@ public class TestRun {
         String str=chars.toString();
         System.out.println(str);*/
 
-        String[] test={"","","caaaa"};
-//        System.out.println(test[0].matches("[a-z]*"));
+       ValidParentheses test=new ValidParentheses();
+
+        System.out.println(test.isValid("{[]}"));
+        String S="[{}]";
+        System.out.println(S.indexOf("[]"));
 
 
 
-        LongestCommonPrefix longestCommonPrefix=new LongestCommonPrefix();
+
+
+       /* LongestCommonPrefix longestCommonPrefix=new LongestCommonPrefix();
         String answer=longestCommonPrefix.longestCommonPrefix(test);
-        System.out.println(answer);
+        System.out.println(answer);*/
 //        System.out.println(test[1].substring(0,2));
 
 
